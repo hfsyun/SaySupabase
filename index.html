@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Say 功能演示 - Supabase版</title>
+  <meta name="referrer" content="no-referrer">
+  <link rel="stylesheet" href="/Say/css/say-style.css">
+  <link rel="stylesheet" href="/Say/css/say.css">
+  <link rel="icon" type="image/png" sizes="180x180" href="/images/favicon.ico">
+  <style>
+    img.load {
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+    }
+    img.load.loaded {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <script src="https://fastly.jsdelivr.net/npm/@supabase/supabase-js@2.98.0/dist/umd/supabase.js"></script>
+<script type="text/javascript" src="/js/supabase-client.js"></script>
+<script type="text/javascript" src="/Say/js/Say.min.js"></script>
+
+
+  <div id="atk-say"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      new Say({
+        supabaseUrl: 'https://xxxxxxxxxxxxx.supabase.co',
+        supabaseAnonKey: 'JtaOqoOq',
+        pageSize: 10,
+        loadImg: ''
+      });
+    });
+  </script>
+</body>
+</html>

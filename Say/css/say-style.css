@@ -1,0 +1,108 @@
+/* 前缀选择区域样式 */
+.atk-prefix-section {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+.atk-prefix-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.atk-prefix-selector label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.atk-prefix-select {
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.atk-custom-prefix {
+  padding: 6px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  min-width: 200px;
+}
+
+.atk-prefix-preview {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.atk-prefix-preview label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.atk-prefix-preview-text {
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* 标签前缀突出显示样式 */
+.atk-prefix {
+  display: inline-block;
+  padding: 4px 12px;
+  margin-right: 8px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff8200, #ff5000);
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(255, 130, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  top: -1px;
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.atk-prefix:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 130, 0, 0.4);
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, #ff9020, #ff6020);
+}
+
+/* 标签伪链接样式 */
+.atk-tag {
+  display: inline-block;
+  padding: 2px 6px;
+  margin: 2px;
+  background-color: #f8f9fa;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.atk-tag:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.atk-tag::before {
+  content: "#";
+}
